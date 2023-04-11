@@ -5,13 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JSON </title>
-    <script src="js/script.js"></script>
+    <script></script>
    
 </head>
 <body>
-    <ul id="users">
+    <ol id="users">
+        
 
-    </ul>
-    
+    </ol>
+    <button id="bt_update">Update</button>
+    <script type="text/javascript">
+    users_update = function() {
+        var x = new XMLHttpRequest();
+            x.onreadystatechange = function() {
+                let output = "";
+                if(this.readyState == 4 && this.status == 200){
+                    let response = x.responseText;
+                    let user= JSON.parse(response); 
+                    console.log(response);
+                    for (var i =0; i < user.length; i++) 
+                        output += "<li>"+ user[i].username + "</li>"; }
+                    document.getElementById("users").innerHTML = output;
+                }
+            
+            x.open("GET","http://localhost/Alan_treino/JSON/JSON/JSON03/data.json", true);
+            x.send();
+        
+       
+    }
+    var bt = document.getElementById("bt_update");
+        bt.addEventListener("click",users_update);
+    </script>        
 </body>
 </html>
