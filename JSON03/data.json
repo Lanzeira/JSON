@@ -1,0 +1,46 @@
+[{
+    
+    "username": "ThiagoRamon", 
+    "password": "123",
+    "profile": {
+        "first_name": "Thiago", 
+        "last_name": "Pinto"
+    },
+    "contact":{ 
+        "email":["Thiago@hotmail.com", "Thiago@hotmail.br"], 
+        "phone": ["555-5555-555", "21-2121-212"]
+    }
+}, { 
+        "username": "User 2",
+        "password": "123", 
+        "profile": { 
+             "first_name": "user 2", 
+             "last_name": "Pinto"
+    }, 
+    "contact":{
+        "email": ["2@hotmail.com", "2@hotmail.br"], 
+        "phone": ["555-5555-555--2", "21-2121-212 --2222"]
+    }
+},  { 
+        "username": "User 3",
+        "password": "123", 
+        "profile": { 
+             "first_name": "user 3", 
+             "last_name": "Pinto"
+    }, 
+    "contact":{
+        "email": ["2@hotmail.com", "2@hotmail.br"], 
+        "phone": ["555-5555-555--2", "21-2121-212 --2222"]
+    }
+},  { 
+        "username": "User 4",
+        "password": "123", 
+        "profile": { 
+             "first_name": "user 4", 
+             "last_name": "Pinto"
+    }, 
+    "contact":{
+        "email": ["2@hotmail.com", "2@hotmail.br"], 
+        "phone": ["555-5555-555--2", "21-2121-212 --2222"]
+    }
+}]
